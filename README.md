@@ -27,9 +27,7 @@ snapcraft push nockberge_0.0.2_amd64.snap
 
 # Push and release immediately
 snapcraft upload --release=edge nockberge_0.0.3_amd64.snap
-
 ```
-
 
 ### Check and install snap
 ```
