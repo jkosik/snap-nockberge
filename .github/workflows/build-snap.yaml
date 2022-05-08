@@ -8,10 +8,7 @@ on:
 jobs:
   build:
     name: Create snap package
-    runs-on: ubuntu-20.04
-    defaults:
-      run:
-        working-directory: ./nockberge    
+    runs-on: ubuntu-20.04 
 
     steps:
       - name: Checking out repo

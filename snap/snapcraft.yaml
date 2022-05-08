@@ -15,7 +15,7 @@ apps:
 
 parts:
   nockberge:
-    source: .
+    source: nockberge/
     plugin: go
   gnu-bash:
     source: http://ftp.gnu.org/gnu/bash/bash-5.1.tar.gz
