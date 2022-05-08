@@ -24,13 +24,13 @@ jobs:
       #   run: |
       #     sg lxd -c 'snapcraft --use-lxd'
       #     sudo mv nockberge*.snap nockberge.snap
-      # - name: Uploading snap
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: nockberge.snap
-      #     path: nockberge.snap
       - uses: snapcore/action-build@v1
         id: build
+      - name: Uploading snap
+        uses: actions/upload-artifact@v3
+        with:
+          name: nockberge*.snap
+          path: nockberge.snap
       - uses: snapcore/action-publish@v1
         with:
           store_login: ${{ secrets.STORE_LOGIN }}
