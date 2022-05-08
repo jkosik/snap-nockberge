@@ -9,6 +9,9 @@ jobs:
   build:
     name: Create snap package
     runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: ./nockberge    
 
     steps:
       - name: Checking out repo
@@ -31,7 +34,6 @@ jobs:
       #     path: nockberge.snap
       - uses: snapcore/action-build@v1
         id: build
-        working-directory: ./nockberge
       - uses: snapcore/action-publish@v1
         with:
           store_login: ${{ secrets.STORE_LOGIN }}
