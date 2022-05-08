@@ -1,6 +1,6 @@
 name: nockberge
 base: core20
-version: '0.0.2'
+version: '0.0.3'
 summary: Demo Snap
 description: |
   Snap consisting from demo scripts and external part
@@ -18,5 +18,5 @@ parts:
     source: .
     plugin: go
   gnu-bash:
-    source: http://ftp.gnu.org/gnu/bash/bash-5.0.tar.gz
+    source: http://ftp.gnu.org/gnu/bash/bash-5.1.tar.gz
     plugin: autotools
