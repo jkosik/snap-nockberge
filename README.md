@@ -5,7 +5,7 @@ This project builds sample Snap `nockberge` and pushes Snap to [Snap Store](http
 ### GitHub Actions
 Use [GitHub Actions Workflow](https://github.com/jkosik/snap-nockberge/blob/main/.github/workflows/build-snap.yaml) or follow manual steps below for local builds.
 
-### Prepare environment and build
+### Prepare environment and build Snap
 ```
 # install snapcraft
 sudo snap install snapcraft --classic 
@@ -22,7 +22,7 @@ sg lxd -c 'snapcraft --use-lxd'
 sudo snap install nockberge_0.0.2_amd64.snap --dangerous 
 ```
 
-### Publish snap
+### Publish Snap
 ```
 snapcraft login
 snapcraft register nockberge
