@@ -1,4 +1,6 @@
-## snap-hello-world
+## Sample Snap build
+This project builds sample Snap `nockberge` and pushes Snap to [Snap Store](https://snapcraft.io/search?q=nockberge).
+
 
 ### GitHub Actions
 Use [GitHub Actions Workflow](https://github.com/jkosik/snap-nockberge/blob/main/.github/workflows/build-snap.yaml) or follow manual steps below for local builds.
