@@ -26,11 +26,11 @@ jobs:
       #     sudo mv nockberge*.snap nockberge.snap
       - uses: snapcore/action-build@v1
         id: build
-      - name: Uploading snap
+      - name: Uploading snap as GH Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: nockberge*.snap
-          path: nockberge.snap
+          name: nockberge.snap
+          path: nockberge*.snap
       - uses: snapcore/action-publish@v1
         with:
           store_login: ${{ secrets.STORE_LOGIN }}
