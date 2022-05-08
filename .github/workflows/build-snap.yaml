@@ -31,6 +31,7 @@ jobs:
       #     path: nockberge.snap
       - uses: snapcore/action-build@v1
         id: build
+        working-directory: ./nockberge
       - uses: snapcore/action-publish@v1
         with:
           store_login: ${{ secrets.STORE_LOGIN }}
