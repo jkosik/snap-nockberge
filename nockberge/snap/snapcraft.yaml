@@ -1,0 +1,22 @@
+name: nockberge
+base: core20
+version: '0.0.2'
+summary: Demo Snap
+description: |
+  Snap consisting from demo scripts and external part
+grade: stable
+confinement: strict
+
+apps:
+  nockberge:
+    command: bin/nockberge # runs snap as nockberge directly (command name matches snap name)
+  bash:
+    command: usr/local/bin/bash # runs snap as nockberge.bash
+
+parts:
+  nockberge:
+    source: .
+    plugin: go
+  gnu-bash:
+    source: http://ftp.gnu.org/gnu/bash/bash-5.0.tar.gz
+    plugin: autotools
