@@ -1,5 +1,8 @@
 ## snap-hello-world
 
+### GitHub Actions
+Use [GitHub Actions Workflow](https://github.com/jkosik/snap-nockberge/blob/main/.github/workflows/build-snap.yaml) or follow manual steps below for local builds.
+
 ### Prepare environment and build
 ```
 # install snapcraft
