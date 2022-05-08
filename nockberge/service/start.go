@@ -1,7 +1,7 @@
-package start
+package service
 
 import "fmt"
 
-func main() {
+func Start() {
 	fmt.Println("dummy start...")
 }

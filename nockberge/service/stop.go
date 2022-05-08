@@ -1,7 +1,7 @@
-package stop
+package service
 
 import "fmt"
 
-func main() {
+func Stop() {
 	fmt.Println("dummy stop...")
 }
